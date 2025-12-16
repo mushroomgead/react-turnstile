@@ -15,7 +15,6 @@ export default function TurnstileForm() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<string>("");
 
-  // ✅ register global callbacks
   useEffect(() => {
     window.onTurnstileSuccess = (t: string) => {
       console.log(t, "data callback");
