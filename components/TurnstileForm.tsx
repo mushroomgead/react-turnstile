@@ -17,7 +17,6 @@ export default function TurnstileForm() {
 
   useEffect(() => {
     window.onTurnstileSuccess = (t: string) => {
-      console.log(t, "data callback");
       setToken(t);
     };
 
